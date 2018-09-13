@@ -1,0 +1,120 @@
+@import "https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900";
+@mixin customer-img-style{
+  border-radius: 50%;
+  width: 30%;
+  border: 10px solid #ededed;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Lato",sans-serif;
+}
+header{
+  background: linear-gradient(rgba(20,20,20,0.3),rgba(20,20,20,0.3)),url("images/background.jpg");
+  background-size: cover;
+  padding-bottom: 365px;
+  .nav-cnt{
+    display: flex;
+    justify-content: space-around;
+    ul{
+      display: flex;
+      li{
+        list-style-type: none;
+        margin-right: 20px;
+        font-weight: bold;
+        a{
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+  }
+  h1, p{
+    color: white;
+    text-align: center;
+
+  }
+  h1{
+    margin-top: 200px;
+    font-size: 40px;
+    letter-spacing: 3px;
+  }
+}
+main{
+  background: #e3e3e3;
+  h2, p{
+    text-align: center;
+  }
+  h2{
+    margin: 0;
+    padding: 30px 0 0 0;
+  }
+  p{
+    color: #888888;
+  }
+  section{
+    justify-content: space-around;
+    display: flex;
+    padding: 20px 0;
+    article{
+      width: 25%;
+      img{
+        width: 100%;
+      }
+      .destination-cnt{
+        background: white;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        .destination-name{
+          font-weight: bold;
+        }
+      }
+
+    }
+  }
+}
+.customers-opinion{
+display: block;
+  background: white;
+  .inner-section{
+    width: 100%;
+    text-align: center;
+    img{
+      @include customer-img-style
+    }
+    h4{
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    p{
+      color: #a4a4a4;
+      font-style: italic;
+      font-size: 13px;
+    }
+  }
+}
+footer{
+  .left-footer{
+    margin-left: 30px;
+  }
+  .right-footer{
+    margin-right: 30px;
+  }
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  ul{
+    display: flex;
+    li{
+      list-style-type: none;
+      margin-right: 20px;
+      a{
+        text-decoration: none;
+        color: #a4a4a4;
+      }
+    }
+
+  }
+}

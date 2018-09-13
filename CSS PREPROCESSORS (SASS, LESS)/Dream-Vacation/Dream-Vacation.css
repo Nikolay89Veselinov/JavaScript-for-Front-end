@@ -1,0 +1,91 @@
+@import "https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900";
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato",sans-serif; }
+
+header {
+  background: linear-gradient(rgba(20, 20, 20, 0.3), rgba(20, 20, 20, 0.3)), url("images/background.jpg");
+  background-size: cover;
+  padding-bottom: 365px; }
+  header .nav-cnt {
+    display: flex;
+    justify-content: space-around; }
+    header .nav-cnt ul {
+      display: flex; }
+      header .nav-cnt ul li {
+        list-style-type: none;
+        margin-right: 20px;
+        font-weight: bold; }
+        header .nav-cnt ul li a {
+          text-decoration: none;
+          color: white; }
+  header h1, header p {
+    color: white;
+    text-align: center; }
+  header h1 {
+    margin-top: 200px;
+    font-size: 40px;
+    letter-spacing: 3px; }
+
+main {
+  background: #e3e3e3; }
+  main h2, main p {
+    text-align: center; }
+  main h2 {
+    margin: 0;
+    padding: 30px 0 0 0; }
+  main p {
+    color: #888888; }
+  main section {
+    justify-content: space-around;
+    display: flex;
+    padding: 20px 0; }
+    main section article {
+      width: 25%; }
+      main section article img {
+        width: 100%; }
+      main section article .destination-cnt {
+        background: white;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between; }
+        main section article .destination-cnt .destination-name {
+          font-weight: bold; }
+
+.customers-opinion {
+  display: block;
+  background: white; }
+  .customers-opinion .inner-section {
+    width: 100%;
+    text-align: center; }
+    .customers-opinion .inner-section img {
+      border-radius: 50%;
+      width: 30%;
+      border: 10px solid #ededed; }
+    .customers-opinion .inner-section h4 {
+      text-transform: uppercase;
+      letter-spacing: 2px; }
+    .customers-opinion .inner-section p {
+      color: #a4a4a4;
+      font-style: italic;
+      font-size: 13px; }
+
+footer {
+  background: white;
+  display: flex;
+  justify-content: space-between; }
+  footer .left-footer {
+    margin-left: 30px; }
+  footer .right-footer {
+    margin-right: 30px; }
+  footer ul {
+    display: flex; }
+    footer ul li {
+      list-style-type: none;
+      margin-right: 20px; }
+      footer ul li a {
+        text-decoration: none;
+        color: #a4a4a4; }
+
+/*# sourceMappingURL=Dream-Vacation.css.map */
