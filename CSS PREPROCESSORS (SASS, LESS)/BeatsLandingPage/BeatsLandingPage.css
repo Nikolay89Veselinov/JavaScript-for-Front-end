@@ -1,0 +1,70 @@
+@import "https://fonts.googleapis.com/css?family=Open+Sans:400,900";
+body {
+  font-family: "Open Sans", 'sans-serif'; }
+  body ul {
+    display: flex;
+    justify-content: space-around; }
+    body ul li {
+      margin-right: 100px;
+      list-style-type: none;
+      font-weight: bold;
+      text-transform: uppercase; }
+      body ul li a {
+        text-decoration: none;
+        color: #C0C0C0; }
+      body ul li a:hover {
+        border-bottom: 3px solid #C0C0C0;
+        color: black; }
+  body main section {
+    padding: 30px;
+    display: flex; }
+    body main section article {
+      padding: 10px;
+      width: 48%; }
+      body main section article h2 {
+        text-align: center;
+        color: #949494;
+        text-transform: uppercase;
+        font-size: 52px;
+        font-weight: lighter; }
+      body main section article img {
+        width: 100%; }
+      body main section article p {
+        color: #C0C0C0; }
+      body main section article button {
+        padding: 12px 30px;
+        background: #FC0102;
+        border: none;
+        border-radius: 25px;
+        text-transform: uppercase;
+        font-size: 18px;
+        color: #e5e5e5; }
+      body main section article button:hover {
+        cursor: pointer;
+        border: 1px solid #FC0102;
+        background: white;
+        color: #FC0102; }
+
+span {
+  color: black;
+  font-weight: bold; }
+
+.price {
+  font-size: 28px;
+  padding-right: 10px; }
+
+.power-Beats {
+  padding: 30px; }
+
+.power-Beats * {
+  margin-top: 60px; }
+
+.info-text {
+  text-transform: uppercase;
+  margin-top: 0;
+  text-align: center; }
+
+.power-Beats h2 {
+  margin-bottom: 0; }
+
+/*# sourceMappingURL=BeatsLandingPage.css.map */
