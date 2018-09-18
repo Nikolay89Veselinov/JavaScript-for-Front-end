@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  padding: 0;
+  margin: 0; }
+
+header .logo {
+  position: relative;
+  top: 30px; }
+header .main-title {
+  border-bottom: 1px solid #C52A30;
+  font-size: 22px;
+  margin: auto;
+  margin-top: 18px;
+  padding: 5px 0 0 5px;
+  color: #C52A30; }
+
+.nav {
+  padding: 0; }
+  .nav nav {
+    width: 100%;
+    margin: 10px auto; }
+    .nav nav ul {
+      text-align: center;
+      margin: auto;
+      background: #C52A30; }
+    .nav nav li {
+      list-style-type: none;
+      text-transform: uppercase;
+      margin-right: 40px;
+      padding: 10px;
+      display: inline-block; }
+      .nav nav li a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px; }
+      .nav nav li a:hover {
+        border-bottom: 1px solid white; }
+    .nav nav .fa-bars {
+      display: none; }
+
+main .services {
+  color: #C52A30;
+  padding: 10px;
+  font-size: 18px; }
+main .first-imgs {
+  border-bottom: 2px solid #C52A30;
+  padding-top: 20px; }
+  main .first-imgs img {
+    padding: 5px;
+    border: 1px solid gray;
+    height: 80%;
+    width: 100%; }
+  main .first-imgs img:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    border: 1px solid #C52A30; }
+main .second-imgs {
+  display: flex;
+  margin-top: 30px; }
+  main .second-imgs h3 {
+    margin-top: 10px; }
+  main .second-imgs img {
+    padding: 5px;
+    border: 1px solid gray;
+    height: 70%;
+    width: 100%; }
+  main .second-imgs img:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    border: 1px solid #C52A30; }
+  main .second-imgs button {
+    border: 1px solid #C52A30;
+    padding: 5px 15px;
+    background: none;
+    border-radius: 15px;
+    color: #C52A30;
+    text-transform: uppercase; }
+  main .second-imgs button:hover {
+    cursor: pointer;
+    background: #C52A30;
+    color: white; }
+main .company-info {
+  background: url("images/background-header.jpg") no-repeat fixed;
+  height: 250px;
+  margin: 30px 0; }
+  main .company-info .info {
+    color: white; }
+  main .company-info img {
+    width: 100%; }
+
+footer {
+  background-color: #C52A30;
+  color: white; }
+  footer h4 {
+    padding-top: 10px; }
+  footer .ctn-div {
+    padding-bottom: 15px;
+    margin-top: 100px;
+    text-align: center; }
+  footer .footer-ctn {
+    padding: 15px;
+    background-color: #3A3E41;
+    text-align: right; }
+  footer i {
+    font-size: 22px;
+    float: left;
+    margin-right: 15px; }
+  footer button {
+    background: white;
+    padding: 5px 10px;
+    border: none;
+    color: #C52A30;
+    border-radius: 15px; }
+  footer button:hover {
+    cursor: pointer; }
+
+@media only screen and (max-width: 992px) {
+  body .nav .fa-bars {
+    display: block;
+    margin: 5px auto;
+    font-size: 40px; }
+  body .nav ul {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: none;
+    text-align: center; }
+    body .nav ul li {
+      display: block;
+      background: white;
+      margin-bottom: 2px;
+      margin-right: 0; }
+      body .nav ul li a {
+        color: #C52A30; }
+
+  header .nav .fa-bars {
+    display: block;
+    margin: 5px auto;
+    font-size: 40px; }
+  header .nav ul {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: none;
+    text-align: center; }
+    header .nav ul li {
+      display: block;
+      background: #000;
+      margin-bottom: 2px;
+      margin-right: 0; }
+      header .nav ul li a {
+        color: #ffffff; }
+  header .logo img {
+    margin: 10px auto 0;
+    display: block; }
+
+  .fa-bars:hover ul {
+    display: block; }
+
+  .nav i {
+    text-align: center; } }
+
+/*# sourceMappingURL=Das%20Engineering.css.map */

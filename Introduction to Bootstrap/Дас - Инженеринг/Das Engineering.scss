@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+@mixin style-img{
+    padding: 5px;
+    border:  1px solid gray;
+}
+@mixin hover-img{
+  cursor: pointer;
+  opacity: 0.8;
+  border: 1px solid #C52A30;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  padding: 0;
+  margin: 0;
+}
+
+header{
+  .logo{
+    position: relative;
+    top: 30px;
+  }
+  .main-title{
+    border-bottom: 1px solid #C52A30;
+    font-size: 22px;
+    margin: auto;
+    margin-top: 18px;
+    padding: 5px 0 0 5px;
+    color: #C52A30;
+  }
+}
+.nav{
+  padding: 0;
+  nav{
+    width: 100%;
+    margin: 10px auto;
+    ul{
+      text-align: center;
+      margin: auto;
+      background: #C52A30;
+    }
+    li{
+      list-style-type: none;
+      text-transform: uppercase;
+      margin-right: 40px;
+      padding: 10px;
+      display: inline-block;
+      a{
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+      }
+      a:hover{
+        border-bottom: 1px solid white;
+      }
+    }
+    .fa-bars {
+      display: none;
+    }
+  }
+}
+
+main{
+  .services{
+    color: #C52A30;
+    padding: 10px;
+    font-size: 18px;
+  }
+  .first-imgs{
+    border-bottom: 2px solid #C52A30;
+      padding-top: 20px;
+    img{
+      @include style-img;
+      height: 80%;
+      width: 100%;
+    }
+    img:hover{
+      @include hover-img;
+    }
+  }
+  .second-imgs{
+    h3{
+      margin-top: 10px;
+    }
+   display: flex;
+    margin-top: 30px;
+    img{
+      @include style-img;
+      height: 70%;
+      width: 100%;
+    }
+    img:hover{
+      @include hover-img;
+    }
+    button{
+      border: 1px solid #C52A30;
+      padding: 5px 15px;
+      background: none;
+      border-radius: 15px;
+      color: #C52A30;
+      text-transform: uppercase;
+    }
+    button:hover{
+      cursor: pointer;
+      background: #C52A30;
+      color: white;
+    }
+  }
+  .company-info{
+    .info{
+      color: white;
+    }
+    background:
+    url("images/background-header.jpg") no-repeat fixed;
+    height: 250px;
+    margin: 30px 0;
+    img{
+      width: 100%;
+    }
+  }
+
+}
+footer{
+  h4{
+    padding-top: 10px;
+  }
+  background-color:#C52A30 ;
+  color: white;
+  .ctn-div{
+    padding-bottom: 15px;
+    margin-top: 100px;
+    text-align: center;
+  }
+  .footer-ctn{
+    padding: 15px;
+    background-color: #3A3E41;
+    text-align: right;
+  }
+  i{
+    font-size: 22px;
+    float: left;
+    margin-right: 15px;
+  }
+  button{
+      background: white;
+    padding: 5px 10px;
+    border: none;
+    color: #C52A30;
+    border-radius: 15px;
+  }
+  button:hover{
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 992px){
+  body{
+    .nav {
+      .fa-bars {
+        display: block;
+        margin: 5px auto;
+        font-size: 40px;
+      }
+      ul {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        display: none;
+        text-align: center;
+        li {
+          display: block;
+          background: white ;
+          margin-bottom: 2px;
+          margin-right: 0;
+          a {
+            color: #C52A30;
+          }
+        }
+      }
+    }
+  }
+  header {
+    .nav {
+      .fa-bars {
+        display: block;
+        margin: 5px auto;
+        font-size: 40px;
+      }
+      ul {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        display: none;
+        text-align: center;
+        li {
+          display: block;
+          background: #000;
+          margin-bottom: 2px;
+          margin-right: 0;
+          a {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+    .logo {
+      img {
+        margin: 10px auto 0;
+        display: block;
+      }
+    }
+  }
+  .fa-bars:hover ul {
+    display: block;
+  }
+  .nav i{
+    text-align: center;
+  }
+}
